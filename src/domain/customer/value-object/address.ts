@@ -27,6 +27,25 @@ export default class Address {
         }
     }
     
+    get city (): string {
+        return this._city
+    }
+
+    get state (): string {
+        return this._state
+    }
+
+    get street (): string {
+        return this._street
+    }
+
+    get zipCode (): string {
+        return this._zipCode
+    }
+
+    get number (): number {
+        return this._number
+    }
     toString() {
         return `${this._street}, ${this._city} - ${this._state}, ${this._zipCode}`
     }

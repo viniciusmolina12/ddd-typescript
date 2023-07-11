@@ -8,11 +8,11 @@ export default class CustomerRepository implements CustomerRepositoryInterface {
     await CustomerModel.create({
       id: entity.id,
       name: entity.name,
-      street: entity.address._street,
-      number: entity.address._number,
-      zipcode: entity.address._zipCode,
-      state: entity.address._state,
-      city: entity.address._city,
+      street: entity.address.street,
+      number: entity.address.number,
+      zipcode: entity.address.zipCode,
+      state: entity.address.state,
+      city: entity.address.city,
       active: entity.isActive(),
       rewardPoints: entity.rewardPoints,
     });
